@@ -1,2 +1,2 @@
 # roynonjones.github.io
-Website for the Roynon-Jones &amp; Co firm
+Website for the RoynonJones &amp; Co firm
