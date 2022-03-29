@@ -1,0 +1,30 @@
+// =======================================
+//  Footer
+// =======================================
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+
+  .footer-inner {
+    @extend .flexbox;
+    align-items: center;
+    justify-content: center;
+    @include for-tablet-portrait-up {
+      justify-content: space-between;
+    };
+  }
+
+  p, img {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    max-width: 120px;
+  }
+
+  .last-word {
+    text-align: right;
+  }
+}

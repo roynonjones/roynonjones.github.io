@@ -1,0 +1,70 @@
+// ------------
+// Global styles
+// ------------
+.container {
+  position: relative;
+  max-width: $column-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include for-desktop-up {
+    padding: 0;
+  };
+}
+
+.flexbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  };
+
+  .flex-half {
+    flex: 0 0 100%;
+
+    @include for-tablet-landscape-up {
+      flex: 1 1 34%;
+      max-width: 50%;
+    };
+  }
+
+}
+
+.hero-header {
+  max-width: 750px;
+  border-bottom: 3px solid #000;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.hero-main {
+  padding-top: 2rem;
+}
+
+.contactlinks {
+
+  &:first-child {
+    margin-right: 1.5rem;
+  }
+}
+
+.address-half {
+  @include for-tablet-landscape-up {
+    flex: 1 1 34%;
+    max-width: 50%;
+  };
+}
+
+.small-heading {
+  font-size: 28px;
+}
